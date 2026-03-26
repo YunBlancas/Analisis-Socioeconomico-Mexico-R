@@ -1,23 +1,21 @@
-# Analisis-Socioeconomico-Mexico-R
-Análisis de indicadores de salud, tecnología y demografía en México utilizando R y Leaflet
+# Análisis Socioeconómico de México con R
 
-## Contenido del Script Principal (`script_problemario.R`)
+Este repositorio contiene la resolución del problemario de indicadores nacionales, estatales y municipales.
 
-Este script contiene el flujo de trabajo completo para el análisis de indicadores socioeconómicos nacionales, estatales y municipales de México. Los procesos incluidos son:
+## Detalle del Script Principal (`script_problemario.R`)
 
-### 1. Análisis de Series de Tiempo y Comparativa Estatal
-* [cite_start]**Cálculo de Variaciones:** Análisis de la evolución de tasas de mortalidad (Diabetes) entre años específicos[cite: 53].
-* [cite_start]**Visualización Dinámica:** Creación de gráficas de líneas para comparar múltiples estados, utilizando personalización de fuentes (Times New Roman) y colores específicos por entidad para facilitar la lectura[cite: 53].
+Este archivo ejecuta el flujo de trabajo para los ejercicios 4 al 14 del curso:
 
-### 2. Análisis Municipal: Zona Metropolitana de Monterrey (ZMM)
-* [cite_start]**Filtrado Avanzado:** Selección de los 13 municipios que integran la ZMM (Apodaca, San Pedro, Monterrey, etc.) a partir de bases de datos municipales masivas[cite: 1].
-* [cite_start]**Visualización de Fecundidad:** Gráfica de barras de la Tasa de Fecundidad Adolescente para el año más reciente (2019), ordenada por valor para identificar disparidades intra-metropolitanas[cite: 2, 3].
-* [cite_start]**Estética Profesional:** Implementación de la librería `wesanderson` para la aplicación de paletas de colores cinematográficas y limpieza de temas con `theme_minimal()`[cite: 53].
+* **Análisis de Series de Tiempo (Ej. 4, 5 y 8):** Comparativa de tasas de mortalidad por Diabetes entre estados, con personalización de fuentes (Times New Roman) y colores específicos.
+* **Análisis Municipal de la ZMM (Ej. 12):** Filtrado de los 13 municipios de la Zona Metropolitana de Monterrey y creación de una gráfica de barras de fecundidad adolescente utilizando paletas de la librería `wesanderson`.
+* **Manejo de Datos de Panel (Ej. 13 y 14):** Reestructuración de datos de suscripciones celulares mediante `pivot_wider` y `pivot_longer`, asegurando la integridad de 160 registros y el formato numérico de los años.
 
-### 3. Reestructuración de Datos (Data Reshaping)
-* [cite_start]**Pivot_wider:** Transformación de microdatos de suscripciones celulares (indicador 98) de formato "largo" a una matriz comparativa "ancha" por años (2000-2020), facilitando la lectura de panel para 32 entidades[cite: 5, 7, 9].
-* **Pivot_longer:** Reversión del proceso para asegurar la integridad de los datos, verificando dimensiones finales (160 registros) y convirtiendo variables temporales a formato numérico para futuros análisis[cite: 10, 12, 14, 15].
+## Visualización Geoespacial (`Script_mapa.R`)
+* **Mapa Leaflet:** Visualización interactiva de la Tasa de Suicidios (Indicador 360) con popups detallados y resaltado al pasar el cursor (hover).
 
-## Requisitos para Ejecución
-Para replicar este análisis, es necesario contar con las siguientes librerías instaladas:
-`tidyverse`, `wesanderson`, `extrafont`.
+## Ventajas de GitHub para Economistas
+1. **Reproducibilidad:** Facilita que otros investigadores repliquen los análisis exactamente.
+2. **Control de versiones:** Permite rastrear cambios en modelos económicos sin perder versiones previas.
+3. **Colaboración:** Optimiza el trabajo en equipo en proyectos de datos masivos.
+4. **Portafolio:** Sirve como evidencia pública de habilidades técnicas en R.
+5. **Transparencia:** Promueve la ciencia abierta al compartir metodologías y datos.
