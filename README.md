@@ -13,9 +13,3 @@ Este archivo ejecuta el flujo de trabajo para los ejercicios 4 al 14 del curso:
 ## Visualización Geoespacial (`Script_mapa.R`)
 * **Mapa Leaflet:** Visualización interactiva de la Tasa de Suicidios (Indicador 360) con popups detallados y resaltado al pasar el cursor (hover).
 
-## Ventajas de GitHub para Economistas
-1. **Reproducibilidad:** Facilita que otros investigadores repliquen los análisis exactamente.
-2. **Control de versiones:** Permite rastrear cambios en modelos económicos sin perder versiones previas.
-3. **Colaboración:** Optimiza el trabajo en equipo en proyectos de datos masivos.
-4. **Portafolio:** Sirve como evidencia pública de habilidades técnicas en R.
-5. **Transparencia:** Promueve la ciencia abierta al compartir metodologías y datos.
